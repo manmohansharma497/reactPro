@@ -1,4 +1,4 @@
-  import React, { useState } from 'react'
+import React, { useState } from 'react'
 import classes from './navbar.module.css'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
@@ -115,12 +115,14 @@ const Navbar = () => {
           Real Estate <BsHouseDoor />
         </Link>
         <ul className={classes.center}>
-          <li onClick={scrollToTop} className={classes.listItem}>
-            Home
-          </li>
+        <li className={classes.listItem}>
+                  <Link to="/" onClick={scrollToTop}>Home</Link>
+                </li>
+          
           <li className={classes.listItem}>
-            About
-          </li>
+                  <Link to="/about">About</Link>
+                </li>
+          
           <li className={classes.listItem}>
             Featured
           </li>
@@ -204,11 +206,11 @@ const Navbar = () => {
               </Link>
               <AiOutlineClose className={classes.mobileCloseIcon} onClick={() => setShowMobileNav(false)} />
               <ul className={classes.center}>
-                <li onClick={scrollToTop} className={classes.listItem}>
-                  Home
+                <li className={classes.listItem}>
+                  <Link to="/" onClick={scrollToTop}>Home</Link>
                 </li>
                 <li className={classes.listItem}>
-                  About
+                <Link to="/about" onClick={scrollToTop}>About</Link>
                 </li>
                 <li className={classes.listItem}>
                   Featured

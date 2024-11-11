@@ -19,6 +19,7 @@ import MyProfile from './components/myProfile/MyProfile';
 import UpdateProfile from './components/updateProfile/UpdateProfile';
 import './App.css';
 import NotFound from './components/notFound/NotFound';
+import About from './components/about/About';
 
 function App() {
   const { user } = useSelector((state) => state.auth)
@@ -37,6 +38,13 @@ function App() {
             <Hero />
             <PopularProperties />
             <Newsletter />
+            <Footer />
+          </>
+        } />
+        <Route path="/about" element={
+          <>
+            <Navbar />
+            <About />
             <Footer />
           </>
         } />
