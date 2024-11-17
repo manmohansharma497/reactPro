@@ -40,7 +40,7 @@ const About = () => {
                 alt="Team Member"
                 className={classes.teamImage}
               />
-              <h3>John Doe</h3>
+              <h3>Pikachu</h3>
               <p>CEO & Founder</p>
             </div>
 
@@ -50,7 +50,7 @@ const About = () => {
                 alt="Team Member"
                 className={classes.teamImage}
               />
-              <h3>Jane Smith</h3>
+              <h3>Son Goku</h3>
               <p>Lead Developer</p>
             </div>
 
@@ -60,7 +60,7 @@ const About = () => {
                 alt="Team Member"
                 className={classes.teamImage}
               />
-              <h3>Emily Johnson</h3>
+              <h3>Naruto</h3>
               <p>Designer</p>
             </div>
           </div>
